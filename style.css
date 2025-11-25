@@ -326,3 +326,120 @@ textarea:disabled {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-secondary);
 }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        max-height: 30vh;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem;
+    }
+
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebar-header h2 {
+        margin-bottom: 0;
+    }
+
+    .sidebar-header img {
+        max-height: 40px;
+        width: auto;
+        margin-bottom: 0 !important;
+    }
+
+    /* Collapsible sidebar content for mobile */
+    .sidebar-content {
+        display: none;
+        /* Hidden by default on mobile to save space */
+    }
+
+    .sidebar.active .sidebar-content {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .sidebar-footer {
+        display: none;
+    }
+
+    .sidebar.active .sidebar-footer {
+        display: block;
+    }
+
+    /* Add a toggle button for the sidebar */
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--text-primary);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .chat-area {
+        height: 70vh;
+        /* Remaining height */
+        flex: 1;
+    }
+
+    .chat-header {
+        padding: 1rem;
+    }
+
+    .messages-container {
+        padding: 1rem;
+    }
+
+    .message {
+        max-width: 100%;
+    }
+
+    .message-content {
+        max-width: 90%;
+        font-size: 1rem;
+        /* Larger font for readability */
+    }
+
+    .input-area {
+        padding: 1rem;
+    }
+
+    .input-wrapper {
+        padding: 0.25rem;
+    }
+
+    textarea {
+        font-size: 16px;
+        /* Prevents iOS zoom on focus */
+        padding: 0.75rem;
+    }
+
+    #sendBtn {
+        padding: 0.75rem;
+        /* Larger touch target */
+    }
+
+    .btn {
+        padding: 1rem;
+        /* Larger touch target */
+        font-size: 1rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .message-content {
+        max-width: 95%;
+    }
+}

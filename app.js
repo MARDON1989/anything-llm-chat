@@ -212,4 +212,14 @@ document.addEventListener('DOMContentLoaded', () => {
             messageInput.focus();
         }
     }
+
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    }
 });
