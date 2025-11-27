@@ -38,7 +38,7 @@ python3 -m http.server 8080
 Then visit `http://localhost:8080`
 
 ### Option 3: Deploy to Proxmox
-See [deployment.md](docs/deployment.md) for detailed Proxmox LXC deployment instructions.
+See [UPDATE_INSTRUCTIONS.md](UPDATE_INSTRUCTIONS.md) for update and deployment details.
 
 ## Usage
 
@@ -82,7 +82,7 @@ The application stores the following in browser localStorage:
 
 ## Deployment
 
-See the [Deployment Guide](docs/deployment.md) for various deployment options including:
+See [UPDATE_INSTRUCTIONS.md](UPDATE_INSTRUCTIONS.md) for update instructions.
 - Local network serving
 - GitHub Pages
 - Netlify/Vercel
